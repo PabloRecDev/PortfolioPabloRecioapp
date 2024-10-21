@@ -1,0 +1,138 @@
+/* Estilos generales de la sección About */
+:root {
+    --primary-color: #0e0d0d;
+    --secondary-color: #87CEEB;
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+}
+.about {
+    padding: 50px 0;
+    background-color: #1e1e1e;
+}
+
+.about-details {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-info ul li {
+    margin-bottom: 10px;
+    color: #ffffff; /* Color del texto en el fondo oscuro */
+    font-size: 1.1rem; /* Tamaño de fuente ajustado para la legibilidad */
+}
+
+/* Sección "Pilares de mi enfoque" */
+.pillars-section {
+    padding-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.pillars-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ffffff; /* Se mantiene el color para cohesión con el resto */
+}
+
+.pillars-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #c0c0c0; /* Color más claro para el subtítulo */
+}
+
+.pillars-steps {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espaciado entre los pasos */
+    flex-wrap: wrap; /* Adaptación para pantallas pequeñas */
+}
+
+.pillar-step {
+    background-color: var(--background-color); /* Color de fondo de las tarjetas */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--secondary-color); /* Borde para resaltar las tarjetas */
+    transition: transform 0.3s ease-in-out; /* Añadir una ligera animación al pasar sobre la tarjeta */
+}
+
+.pillar-step:hover {
+    transform: translateY(-10px); /* Pequeño efecto de elevación al hacer hover */
+}
+
+.step-number {
+    color: var(--secondary-color); /* Color amarillo destacado */
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.pillar-title {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.pillar-step p {
+    color: #c0c0c0; /* Color de la descripción para resaltar sobre el fondo oscuro */
+    line-height: 1.5;
+}
+
+.pillar-step a {
+    color: var(--secondary-color); /* Azul brillante para los enlaces */
+    text-decoration: none;
+}
+
+.pillar-step a:hover {
+    text-decoration: underline;
+}
+/* General Styling for the About Section */
+/* General Styling for the About Section */
+.about-details {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;      /* Centrar verticalmente si fuera necesario */
+    text-align: center;       /* Alinear el texto al centro */
+    margin-top: 40px;         /* Añadir espacio superior para separarlo del contenido anterior */
+}
+
+.about-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.8; /* Mejorar la separación de líneas */
+    color: var(--text-color);
+}
+
+.about-info ul li {
+    margin-bottom: 10px;
+}
+
+/* Enlaces dentro del texto */
+.about-info a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.about-info a:hover {
+    color: #ffffff; /* Cambiar el color al pasar el ratón */
+}

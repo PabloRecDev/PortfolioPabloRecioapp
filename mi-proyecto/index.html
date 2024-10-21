@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Pablo Recio. Técnico en sistemas microinformáticos y redes, apasionado por la tecnología y en constante aprendizaje.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/favicon-16x16.png" type="image/x-icon" >
+    <script src="/js/script.js" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>Pablo Recio.</title>
+</head>
+<body>
+    <div class="loading-page" id="loading-page">
+        <div class="loading-browser">
+            <div class="loading-browser-bar">
+                <div class="loading-buttons">
+                    <span class="loading-button red"></span>
+                    <span class="loading-button yellow"></span>
+                    <span class="loading-button green"></span>
+                </div>
+            </div>
+            <div class="loading-content">
+                <div class="loading-dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot blue"></span>
+                    <span class="dot green"></span>
+                </div>
+                <p>LOADING...</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="Menú principal">
+        <div class="container">
+            <div class="logo">Pablo Recio.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="home section" id="home">
+        <div class="home-description">
+            <h1>Hola, soy <span class="text"></span></h1>
+            <p>Soy técnico en sistemas microinformáticos y redes. Actualmente estoy aumentando mis conocimientos en programación, ya que estoy estudiando un grado superior de desarrollo de aplicaciones multiplataforma. Me apasiona la tecnología y estoy en constante aprendizaje para mejorar mis habilidades como desarrollador.</p>
+        </div>
+        <div class="home-photo">
+            <img src="/IMG_2686-removebg-preview.png" alt="Foto de perfil de Pablo Recio">
+        </div>
+        <div class="home-animations">
+            <span class="animation-element">✨</span>
+            <span class="animation-element">🚀</span>
+        </div>
+        <button class="contact-button" onclick="scrollToSection('contact')">Contáctame</button>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2>Mis Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>Desarrollo web</h3>
+                    <div class="skills-bar">
+                        <div class="bar" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Redes y Sistemas</h3>
+                    <div class="skills-bar">
+                        <div class="bar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <!-- Los Pilares de mi Enfoque -->
+            <div class="pillars-section">
+                <h2><img src="../mi-proyecto/favicon-32x32.png" alt=""><br> Sobre mí</h2>
+                <p>Forjando experiencias digitales duraderas a través del tiempo.</p>
+                <div class="pillars-steps">
+                    <div class="pillar-step">
+                        <span class="step-number">Step 1</span>
+                        <h3>Planificación</h3>
+                        <p>Mi enfoque no es meramente implementación técnica, sino construir <a href="#">bases sólidas</a> que perduren en el tiempo.</p>
+                    </div>
+                    <div class="pillar-step">
+                        <span class="step-number">Step 2</span>
+                        <h3>Diseño</h3>
+                        <p>Estoy aquí para ofrecerte <a href="#">soluciones que destaquen</a> y generen un impacto duradero en tu audiencia.</p>
+                    </div>
+                    <div class="pillar-step">
+                        <span class="step-number">Step 3</span>
+                        <h3>Desarrollo</h3>
+                        <p>Más allá de solo escribir código, estoy comprometido a comprender tus <a href="#">necesidades y objetivos</a>.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sobre Mí -->
+            <div class="about-details">
+                <div class="about-info">
+                    <ul>
+                        <li>Técnico en sistemas microinformáticos y redes con experiencia en el mundo del desarrollo web.</li>
+                        <li>Estudiante de desarrollo de aplicaciones multiplataforma.</li>
+                        <li>Apasionado por la tecnología y el desarrollo.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="contact-title">Contáctame</h2>
+            <form class="contact-form" action="send_email.php" method="POST">
+                <div class="form-group">
+                    <div class="input-container">
+                        <span class="icon"></span>
+                        <input type="text" id="name" name="name" placeholder="Nombre" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-container">
+                        <span class="icon"></span>
+                        <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-container">
+                        <span class="icon"></span>
+                        <textarea id="message" name="message" placeholder="Mensaje" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="submit-button">Enviar</button>
+                </div>
+            </form>            
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container-footer-content">
+            <p>&copy; 2024 Pablo Recio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
